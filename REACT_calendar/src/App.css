@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a8a8a8;
+  height: 100%;
+}
+
+.App {
+  width: 100%;
+  max-width: 990px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.calendar {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 38px 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1, p {
+  display: block;
+  color: #3C3C3C;
+  text-align: center;
+}
+
+div.date_tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  background: none;
+}
+
+div.date_tile.shrink {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4f4f4f;
+  padding: 1px 25px;
+  height: 36px;
+}
+
+div.date_tile.odd_val {
+  background: #727272;
+}
+
+div.date_tile.evn_val {
+  background: #555555;
+}
+
+div.date_tile.today_val {
+  font-size: 52px;
+  padding: 14px 19px;
+  border: 6px solid #faa810;
+}
